@@ -1,0 +1,23 @@
+.card-List {
+    width: 85vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.paginado {
+    background-color: rgb(168, 29, 133);
+    margin-top: 50px;
+    width: 85vw;
+    height: 50px;
+    
+
+}
+.botones{
+    
+    margin: 3px;
+    margin-top: 15px;
+    height: 30px;
+    
+
+}

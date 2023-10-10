@@ -1,0 +1,45 @@
+    
+
+.contenedor {
+    display: flex;
+    justify-self: center;
+    align-content: center;
+    align-self: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 500px;
+    height: 40px;
+    margin-left: 100px;
+    margin-right: 50px;
+    padding-bottom: 50px;
+     margin-right: 10px;
+    
+  }
+  .contenedor input {
+    width: 270px;
+    height: 35px;
+    font-size: 14px;
+    align-self: center;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid grey;
+    border-radius: 5px;
+    
+    
+    
+  }
+
+  .input{
+    color: white;
+    padding-left: 10%;
+    padding-top: 8px;
+  }
+  .search {
+    width: 120px;
+    margin-right: 10px;
+    height: 40px ;
+    border-radius: 5px;
+    
+    
+  }
+  
+  

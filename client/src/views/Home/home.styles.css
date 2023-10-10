@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../../assets/perrofondonuevooo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color:aliceblue;
+   
+    text-align: center;
+  }
+
+  .home-title {
+    margin-top: 75px;
+    margin-bottom: 50px;
+    font-size: 76px;
+    color: rgb(168, 29, 133);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+  }
+  
+
+  

@@ -1,0 +1,30 @@
+.container {
+    display: flex; /* Utiliza flexbox */
+    flex-direction: column; /* Organiza en columna */
+    
+}
+.imagen {
+    width: 700px; /* Establece el ancho de la imagen */
+    height: 500px; /* Establece la altura de la imagen */
+    padding-left: 675px;
+
+  }
+  .divs {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid grey;
+    border-radius: 5px;
+    align-items: center;
+    padding-top: 10px;
+    width: 2200px;
+    
+    
+  }
+  .botonn {
+
+    height: 40px;
+    width: 100px;
+
+  }
+  .h1 {
+    background-color: rgb(168, 29, 133);
+  }
