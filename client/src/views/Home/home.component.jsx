@@ -1,6 +1,6 @@
 
 import './home.styles.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { getDogs } from '../../redux/actions';
 import Cards from "../../components/Cards/Cards.component"
@@ -10,6 +10,7 @@ function Home() {
 
 
   const dispatch = useDispatch()
+  
 
   useEffect(()=>{
     dispatch(getDogs());

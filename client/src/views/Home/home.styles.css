@@ -10,10 +10,11 @@ body {
   }
 
   .home-title {
-    margin-top: 75px;
-    margin-bottom: 50px;
+    margin-top: 15px;
+    margin-bottom: 20px;
     font-size: 76px;
-    color: rgb(168, 29, 133);
+    color: rgb(119, 34, 98);
+    
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   .home{

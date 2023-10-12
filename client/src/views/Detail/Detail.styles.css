@@ -6,7 +6,8 @@
 .imagen {
     width: 700px; /* Establece el ancho de la imagen */
     height: 500px; /* Establece la altura de la imagen */
-    padding-left: 675px;
+    
+    margin-left: 700px;
 
   }
   .divs {
@@ -15,7 +16,9 @@
     border-radius: 5px;
     align-items: center;
     padding-top: 10px;
-    width: 2200px;
+    width: 1000px;
+    margin-left: 550px;
+    margin-bottom: 15px;
     
     
   }
@@ -26,5 +29,8 @@
 
   }
   .h1 {
-    background-color: rgb(168, 29, 133);
+    background-color: rgb(119, 34, 98);
+    width: 500px;
+    margin-left: 800px;
+    border-radius: 6px;
   }

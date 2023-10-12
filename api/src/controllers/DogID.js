@@ -20,18 +20,34 @@ const DogID = async (id, source) => {
 
         }
      } else {
-        await Dog.findByPk(id, {
+         const dogFromDB = await Dog.findByPk(id, {
             include: {
                 model: Temperaments,
                 attributes: ["name"],
             }
          });
+         if(dogFromDB) {
+            return  {
+                id: dogFromDB.id,
+                name: dogFromDB.name,
+                life_span: dogFromDB.life_span,
+                temperament: dogFromDB.temperament,
+                origin: dogFromDB.origin,
+                image: dogFromDB.image,
+                weight: dogFromDB.weight,
+                height: dogFromDB.height,
+              };
+         }
+         
+         
+         
      }
+     
 
 
      
 
-     return dog
+     
 
 }
 module.exports = {DogID}

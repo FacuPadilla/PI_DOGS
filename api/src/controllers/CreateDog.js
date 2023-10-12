@@ -1,13 +1,13 @@
 const {Dog, Temperaments} = require("../db");
 
-const CreateDogDB = async (name, image, weight,height, life_span, temperaments)=>{
-    const newDog = await Dog.create({name, image, weight,height, life_span })
+const CreateDogDB = async (name, image, weight,height, life_span, temperament)=>{
+    const newDog = await Dog.create({name, image, weight,height, life_span, temperament,  })
 
      // Asociar los temperamentos con el perro creado
-  if (temperaments && temperaments.length > 0) {
+  if (temperament && temperament.length > 0) {
     const temperamentsToAssociate = await Temperaments.findAll({
       where: {
-        name: temperaments,
+        name: temperament,
       },
     });
 

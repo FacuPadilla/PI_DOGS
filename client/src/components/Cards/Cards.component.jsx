@@ -43,7 +43,7 @@ const Cards = () => {
      })}
      
     </div>
-    <p>Estas en la pagina {currentPage}</p>
+    <p className="Ps">Estas en la pagina {currentPage}</p>
     <div className="paginado">
         {/* Botón para la página anterior */}
         <button

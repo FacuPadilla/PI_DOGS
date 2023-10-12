@@ -37,5 +37,18 @@
   button:hover {
     background-color: #0056b3;
   }
+  .error {
+    color: red;
+    background-color: rgb(241, 228, 228);
+    
+  }
+  .perrocreado {
+    color: green;
+
+  }
+  .botonn {
+    
+
+  }
   
  

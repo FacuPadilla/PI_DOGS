@@ -1,5 +1,6 @@
 const axios = require("axios");
 const {Dog} = require("../db")
+const { Op } = require('sequelize');
 require("dotenv").config();
 
 const apiKey = process.env.API_KEY
@@ -25,6 +26,7 @@ const DogName = async (name) =>{
         weight: dog.weight.metric,
         height: dog.height.metric,
         life_span: dog.life_span,
+        temperament: dog.temperament
         
 
 
@@ -37,7 +39,14 @@ const DogFiltrado = clean.filter((dog) => dog.name === capitalizedName)
 
 
 
-const DogNameDB = await Dog.findAll({where:{name: name}})
+const DogNameDB = await Dog.findAll({
+  where:{
+    name:{
+      [Op.iLike]: `%${name}%`
+    }
+  }
+  
+  })
 
 
 if (DogFiltrado.length === 0 && DogNameDB.length === 0) {

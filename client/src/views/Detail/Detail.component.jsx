@@ -33,10 +33,13 @@ const GoBack = () => {
       <h1 className="h1"> Estas en el detalle de {character.name}</h1>
       <div className="container">
         <div className="divs">
-        <h2>ID: {character.id}</h2>
+        <h2>
+          ID: {character.id}
+        </h2>
+        <h2>Nombre: {character.name}</h2>
         </div>
         
-        <h2>Nombre: {character.name}</h2>
+        
         <img src={character.image} alt="" className="imagen"></img>
         <br></br>
         <div className="divs">

@@ -4,7 +4,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid grey;
     border-radius: 5px;
-    padding: 25px;
+    padding: 5px;
     cursor: pointer;
     transform: translateZ(0);
     transition: transform 0.25s ease-out;
@@ -27,7 +27,8 @@
     margin-bottom: 10px;
   }
   .div {
-    background-color: rgb(168, 29, 133);
+    background-color: rgb(119, 34, 98);
+    border-radius: 5px;
   }
   .id {
     margin-top: 1px;

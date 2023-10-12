@@ -8,10 +8,11 @@ import {getDogsbyName, clearDogs, getDogs} from "../../redux/actions/index"
 function SearchBar() {
 
   const [name, setName] = useState("");
+  
   const dispatch = useDispatch();
   const dogs = useSelector((state)=> state.allDogs)
   
-
+//actualizo el estado local de forma dinamica
   const handleChange = (event)=> {
     event.preventDefault();
 
@@ -19,11 +20,14 @@ function SearchBar() {
 
     setName(input)
   }
+  //funcion para mi boton buscar utilizando el dipsatch para traer mi funcion del store
+  //función onSearch, utilizo el valor actualizado de name (el valor del input) al hacer la búsqueda de perros por nombre:
   const onSearch =  ()=> {
     dispatch(getDogsbyName(name))
     
      
   }
+  //funcion para mi boton para q reinicie el estado global y me devuelva todso los dogs
   const reset = ()=> {
     
       dispatch(getDogs());
@@ -54,7 +58,7 @@ function SearchBar() {
           </button>
           </Link>
           <button className="search" onClick={reset}>
-            All Dogs
+            Reset
           </button>
         
       </div>

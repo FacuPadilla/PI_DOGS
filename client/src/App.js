@@ -12,7 +12,7 @@ function App() {
       <Route   path="/home" component={Home}/>
       <Route path="/detail/:id" component={Detail}/>
       <Route path="/form" component={Form}/>
-      <Route path="/" component={LandingPage}/>
+      <Route exact path="/" component={LandingPage}/>
     </div>
     </BrowserRouter>
   );

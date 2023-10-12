@@ -8,10 +8,10 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 500px;
     height: 40px;
-    margin-left: 100px;
+    margin-left: 0%;
     margin-right: 50px;
     padding-bottom: 50px;
-     margin-right: 10px;
+    
     
   }
   .contenedor input {

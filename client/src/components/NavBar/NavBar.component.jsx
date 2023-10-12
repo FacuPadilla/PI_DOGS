@@ -1,4 +1,5 @@
 import "./NavBar.styles.css"
+import Filter from "../Filter/Filter.component"
 import SearchBar from "../SearchBar/SearchBar.component";
 
 function NavBar() {
@@ -9,6 +10,7 @@ function NavBar() {
         <SearchBar/>
         
         </div>
+        <Filter></Filter>
         
     
         </div>
